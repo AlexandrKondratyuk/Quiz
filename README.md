@@ -13,3 +13,10 @@ and import to App.js
 ##### Quiz.js --> state --> quiz: []
 ##### ActiveQuiz.js 
 creating block with questions and variants of answers
+##### AnswersList
+create AnswersList => AnswersList.js & AnswersList.css
+##### AnswerItem
+create AnswerItem => AnswerItem.js & AnswerItem.css
+#### Quiz.js
+create state quiz: {answers: [{text: 'some text'}]} at Quiz.js
+

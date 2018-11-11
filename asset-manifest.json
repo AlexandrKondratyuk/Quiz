@@ -1,0 +1,13 @@
+{
+  "main.css": "/quiz/static/css/main.e38eb6fa.chunk.css",
+  "main.js": "/quiz/static/js/main.6218680b.chunk.js",
+  "main.js.map": "/quiz/static/js/main.6218680b.chunk.js.map",
+  "static/js/1.25d0eb5d.chunk.js": "/quiz/static/js/1.25d0eb5d.chunk.js",
+  "static/js/1.25d0eb5d.chunk.js.map": "/quiz/static/js/1.25d0eb5d.chunk.js.map",
+  "runtime~main.js": "/quiz/static/js/runtime~main.3068285a.js",
+  "runtime~main.js.map": "/quiz/static/js/runtime~main.3068285a.js.map",
+  "static/css/main.e38eb6fa.chunk.css.map": "/quiz/static/css/main.e38eb6fa.chunk.css.map",
+  "index.html": "/quiz/index.html",
+  "precache-manifest.3f9a6866c84d20ad42ce74a6db658126.js": "/quiz/precache-manifest.3f9a6866c84d20ad42ce74a6db658126.js",
+  "service-worker.js": "/quiz/service-worker.js"
+}

@@ -22,4 +22,6 @@ create AnswersList => AnswersList.js & AnswersList.css
 create AnswerItem => AnswerItem.js & AnswerItem.css
 #### Quiz.js
 create state quiz: {answers: [{text: 'some text'}]} at Quiz.js
+#### FONTS
+https://www.bootstrapcdn.com/fontawesome/
 

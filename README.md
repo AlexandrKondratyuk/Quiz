@@ -1,3 +1,6 @@
+#gh-pages
+https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d
+
 ### Creating project
 ##### create-react-app react-quiz
 ##### yarn eject
@@ -19,4 +22,6 @@ create AnswersList => AnswersList.js & AnswersList.css
 create AnswerItem => AnswerItem.js & AnswerItem.css
 #### Quiz.js
 create state quiz: {answers: [{text: 'some text'}]} at Quiz.js
+#### FONTS
+https://www.bootstrapcdn.com/fontawesome/
 

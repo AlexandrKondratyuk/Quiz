@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './MenuToggle.css'
 
-const MenuToggle = (props) => {
+const MenuToggle = props => {
     const cls = [
         classes.MenuToggle,
         'fa'
@@ -9,9 +9,9 @@ const MenuToggle = (props) => {
 
     if (props.isOpen) {
         cls.push('fa-times')
+        cls.push(classes.open)
     } else {
         cls.push('fa-bars')
-        cls.push(classes.open)
     }
 
     return (

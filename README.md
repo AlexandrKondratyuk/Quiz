@@ -24,4 +24,6 @@ create AnswerItem => AnswerItem.js & AnswerItem.css
 create state quiz: {answers: [{text: 'some text'}]} at Quiz.js
 #### FONTS
 https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
+#React-router-dom
+$ yarn add react-router-dom
 

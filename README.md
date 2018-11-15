@@ -28,3 +28,5 @@ https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fo
 ## React-router-dom
 $ yarn add react-router-dom
 
+###Validation library
+https://www.npmjs.com/package/is_js

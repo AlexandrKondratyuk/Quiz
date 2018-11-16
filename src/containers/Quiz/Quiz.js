@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import classes from './Quiz.css'
 import ActiveQuiz from '../../components/ActiveQuiz/ActiveQuiz'
 import FinishedQuiz from '../../components/FinishedQuiz/FinishedQuiz'
+import axios from '../../axios/axios-quiz'
+import Loader from "../../components/UI/Loader/Loader";
 
 class Quiz extends Component {
     state = {
@@ -9,35 +11,15 @@ class Quiz extends Component {
         isFinished: false,
         activeQuestion: 0,
         answerState: null,    // { [id] : 'success'  or   'error' }
-        quiz: [
-            {
-                question: 'Which function is used to stop a setInterval timer?',
-                rightAnswerId: 2,
-                id: 1,
-                answers: [
-                    {text: 'clearTimer', id: 1},
-                    {text: 'clearInterval', id: 2},
-                    {text: 'stopInterval', id: 3},
-                    {text: 'stopTimer', id: 4}
-                ]
-            },
-            {
-                question: 'Can multiple event handlers be added to a single element?',
-                rightAnswerId: 1,
-                id: 2,
-                answers: [
-                    {text: 'Yes', id: 1},
-                    {text: 'No', id: 2}
-                ]
-            }
-        ]
+        quiz: [],
+        loading: true
     }
 
     onAnswerClickHandler = answerId => {
         if (this.state.answerState) {
             const key = Object.keys(this.state.answerState)[0]
             if (this.state.answerState[key] === 'success') {
-            return
+                return
             }
         }
 
@@ -90,8 +72,20 @@ class Quiz extends Component {
         })
     }
 
-    componentDidMount () {
-        console.log('Quiz ID = ', this.props.match.params.id);
+    async componentDidMount() {
+
+        try {
+            const response = await axios.get(`/quizes/${this.props.match.params.id}.json`);
+            const quiz = response.data;
+
+            this.setState({
+                quiz,
+                loading: false
+            });
+        } catch (e) {
+            console.log(e);
+        }
+
     }
 
     render() {
@@ -100,8 +94,11 @@ class Quiz extends Component {
 
                 <div className={classes.QuizWrapper}>
                     <h1> Answer the questions </h1>
+
                     {
-                        this.state.isFinished
+                        this.state.loading
+                            ? <Loader/>
+                            : this.state.isFinished
                             ? <FinishedQuiz
                                 results={this.state.results}
                                 quiz={this.state.quiz}

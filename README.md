@@ -39,3 +39,9 @@ $ yarn add axios
 
 #### Loader
 https://loading.io/css
+
+
+#### Auth
+search ('firebase rest auth') 
+=> sign up with email/password 
+=> from Endpoint copy link => change api key

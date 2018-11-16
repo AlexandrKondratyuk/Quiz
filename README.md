@@ -30,3 +30,9 @@ $ yarn add react-router-dom
 
 ###Validation library
 https://www.npmjs.com/package/is_js
+
+###SERVER
+https://firebase.google.com/docs/remote-config/
+
+#### Library for using server and ajax queries
+$ yarn add axios

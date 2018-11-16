@@ -36,3 +36,6 @@ https://firebase.google.com/docs/remote-config/
 
 #### Library for using server and ajax queries
 $ yarn add axios
+
+#### Loader
+https://loading.io/css

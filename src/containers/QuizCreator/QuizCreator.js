@@ -81,8 +81,6 @@ export default class QuizCreator extends Component {
                 rightAnswerId: 1,
                 formControls: createFormControl()
             });
-
-            console.log(response.data);
         } catch (e) {
             console.log(e);
         }

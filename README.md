@@ -41,7 +41,28 @@ $ yarn add axios
 https://loading.io/css
 
 
-#### Auth
+#### _Auth_
 search ('firebase rest auth') 
 => sign up with email/password 
 => from Endpoint copy link => change api key
+
+# **REDUX**
+1) $ yarn add redux react-redux redux-thunk
+2) at index.js
+    - import function createStore =>  import {createStore} from 'redux'
+    - hoc Provider for supporting Redux at app => import {Provider} from 'react-redux'
+    - create store => const store = createStore(rootReducer) // here will be rootReducer
+    - wrap BrowseRouter in Provider with param <Provider store={store}>...</Provider>
+3) create in src folder 'store' for keeping all for Redux
+4) create in store folders 'actions' & 'reducers'
+5) create in reducers folder file 'rootReducer.js'
+    // rootReducer => a function that integrates all existing reducers
+6) in rootReducer.js => import {combineReducers} from 'redux' 
+    // esport function in wich we transfer config object and where we describe all reducers
+7) at index.js => import rootReducer from './store/reducers/rootReducer'
+8) set redux devtools from guthub => copy/paste function 'composeEnhancers' and 
+    => import {createStore, compose, applyMiddleware} from 'redux'
+9) add to const store => const store = createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)))
+10) in actions folder we create file 'actionTypes.js', where we will be keep all actions
+    
+    

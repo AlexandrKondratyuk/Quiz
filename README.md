@@ -64,5 +64,6 @@ search ('firebase rest auth')
     => import {createStore, compose, applyMiddleware} from 'redux'
 9) add to const store => const store = createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)))
 10) in actions folder we create file 'actionTypes.js', where we will be keep all actions
-    
+11) create reducer for Quiz, QuizList...
+
     
